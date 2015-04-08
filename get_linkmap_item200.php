@@ -4,7 +4,7 @@
 // Get one link from linkmap-file with 200-bytes columns
 // --------------------------------------------------------------------------
 
-function get_linkmap_item100($str = '', $path = '') {
+function get_linkmap_item200($str = '', $path = '') {
 	$path = $path ? $path : 'linkmap';
 	$fh   = fopen($path, 'rb');
 	$res  = '';
