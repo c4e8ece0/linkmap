@@ -41,6 +41,7 @@ foreach(file($source) as $k=>$v) {
 	$arr = array_map('trim', explode("\t", $v));
 	if(count($arr) < 2) {
 		print "Not enought elems on line: ".($i+1)."\n";
+		continue;
 	}
 	$str[] = array($arr[0], $arr[1]);
 }
